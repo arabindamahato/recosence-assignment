@@ -85,7 +85,7 @@ http://localhost:8000/post/create/
 </p>
 
 
-##### Update Post  :
+# Update Post  :
 * `If you find [ 'AnonymousUser' object is not iterable ] Error Please Login .`
 
 http://localhost:8000/post/update/
