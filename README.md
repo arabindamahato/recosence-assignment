@@ -12,7 +12,7 @@
 
 7. `After successfully running server please follow the given url and screenshots for better clarification.`
 
-##### Homepage  :
+# Homepage  :
 - http://localhost:8000/
 
 ###### Screenshot
@@ -22,7 +22,7 @@
 </p>
 
 
-##### Blog List View  :
+# Blog List View  :
 - http://localhost:8000/blog/
 
 ###### Screenshot
@@ -32,7 +32,7 @@
 </p>
 
 
-##### Signup for creating a blog post  :
+# Signup for creating a blog post  :
 - http://localhost:8000/accounts/signup/
 
 ###### Screenshot
@@ -42,7 +42,7 @@
 </p>
 
 
-##### Login to create a blog post  :
+# Login to create a blog post  :
 - http://localhost:8000/accounts/login/
 
 ###### Screenshot
@@ -51,7 +51,7 @@
 <img src="src/Screenshots/signin.png">
 </p>
 
-##### Post Detail View  :
+# Post Detail View  :
 * `If you want to update or delete any post you must go to the detail view.`
 - http://localhost:8000/post/9/
 
@@ -62,7 +62,7 @@
 </p>
 
 
-##### Error
+# Error
 * `If you find [ 'AnonymousUser' object is not iterable ] Error during update or delete operation. Then please login to update or delete :`
 
 - http://localhost:8000/post/9/
@@ -73,7 +73,7 @@
 <img src="src/Screenshots/error.png">
 </p>
 
-##### Create Post  :
+# Create Post  :
 * `If you find [ 'AnonymousUser' object is not iterable ] Error Please Login .`
 
 http://localhost:8000/post/create/
@@ -96,7 +96,7 @@ http://localhost:8000/post/update/
 <img src="src/Screenshots/update.png">
 </p>
 
-##### Comment :
+# Comment :
 
 * ` If you want to comment anything then click the below url but make sure you are login`
 * `If you find [ 'AnonymousUser' object is not iterable ] Error Please Login .`
@@ -109,7 +109,7 @@ http://localhost:8000/post/9/
 <img src="src/Screenshots/commentsection_previouspost.png">
 </p>
 
-##### Logout :
+# Logout :
 http://localhost:8000/accounts/logout/
 ###### Screenshot
 
