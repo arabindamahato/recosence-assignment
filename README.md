@@ -62,7 +62,8 @@
 </p>
 
 
-##### If you find [ 'AnonymousUser' object is not iterable ] Error during update or delete operation. Then please login to update or delete :
+##### Error
+* `If you find [ 'AnonymousUser' object is not iterable ] Error during update or delete operation. Then please login to update or delete :`
 
 - http://localhost:8000/post/9/
 
@@ -73,6 +74,7 @@
 </p>
 
 ##### Create Post  :
+* `If you find [ 'AnonymousUser' object is not iterable ] Error Please Login .`
 
 http://localhost:8000/post/create/
 
@@ -84,6 +86,7 @@ http://localhost:8000/post/create/
 
 
 ##### Update Post  :
+* `If you find [ 'AnonymousUser' object is not iterable ] Error Please Login .`
 
 http://localhost:8000/post/update/
 
@@ -94,9 +97,12 @@ http://localhost:8000/post/update/
 </p>
 
 ##### Comment :
+
 * ` If you want to comment anything then click the below url but make sure you are login`
+* `If you find [ 'AnonymousUser' object is not iterable ] Error Please Login .`
 
 http://localhost:8000/post/9/
+
 ###### Screenshot
 
 <p align="center"> 
@@ -104,7 +110,6 @@ http://localhost:8000/post/9/
 </p>
 
 ##### Logout :
-
 http://localhost:8000/accounts/logout/
 ###### Screenshot
 
