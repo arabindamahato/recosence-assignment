@@ -10,4 +10,13 @@
 5. create superuser for accessing admin panel.
 6. Run the Django Server.
 
+##### Homepage  :
+- http://localhost:8000/home/
+
+###### Screenshot
+
+<p align="center"> 
+<img src="src/Screenshots/homepage_intro.png">
+</p>
+
 
