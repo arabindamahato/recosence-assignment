@@ -26,14 +26,8 @@ def search(request):
     return render(request, 'search_results.html', context)
 
 
-
-# def get_category_count():
-#     queryset = Post.objects.values('categories__title').annotate(Count('categories'))
-#     return queryset
-
 def index(request):
     featured = Post.objects.filter(featured = True)
-    # latest = Post.objects.order_by('-timestamp')[0:3]
 
     if request.method == 'POST':
         email = request.POST["email"]
@@ -42,14 +36,11 @@ def index(request):
         new_signup.save()
     context={
         'object_list' : featured,
-        # 'latest' : latest, 
         }    
     return render(request, 'index.html', context)
 
 
 def blog(request):
-    # category_count = get_category_count()
-    # most_recent = Post.objects.order_by('-timestamp')[:3]
     post_list = Post.objects.all() 
     paginator = Paginator(post_list, 4) # Paginator() accepts 2 args post_list and no's of page to show
     page_request_var = 'page'  # localhost:8000/?page=1
@@ -63,15 +54,11 @@ def blog(request):
 
     context = {
         'queryset':paginated_queryset,
-        # 'most_recent':most_recent,
         'page_request_var':page_request_var,
-        # 'category_count':category_count,
     }
     return render(request, 'blog.html', context)
 
 def post(request, id):
-    # category_count = get_category_count()
-    # most_recent = Post.objects.order_by('-timestamp')[:3]
     post = get_object_or_404(Post, id=id)
 
     if request.user.is_authenticated:
@@ -87,8 +74,6 @@ def post(request, id):
     context = {
         'form':form,
         'post':post,
-        # 'most_recent':most_recent,
-        # 'category_count':category_count, 
     }
     return render(request, 'post.html', context)
 
@@ -139,6 +124,6 @@ def post_delete(request, id):
 
     
 
-def contact(request):
-    return render(request, "contact.html")
+# def contact(request):
+#     return render(request, "contact.html")
      

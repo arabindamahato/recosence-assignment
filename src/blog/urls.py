@@ -5,9 +5,10 @@ from django.urls import path, include
 
 from posts.views import (
 	index, blog, post, search,
-	post_create, post_update, post_delete, contact
+	post_create, post_update, post_delete,
+    #  contact
 	)
-
+ 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -19,7 +20,7 @@ urlpatterns = [
     path('post/<id>/', post, name="post_detail"),
     path('post/<id>/update/', post_update, name="post_update"),
     path('post/<id>/delete/', post_delete, name="post_delete"),
-    path('contact/', contact, name="contact"),
+    # path('contact/', contact, name="contact"),
 
     path('summernote/', include('django_summernote.urls')),
 ]
